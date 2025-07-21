@@ -120,6 +120,7 @@ img {
 }
 
 .link-nav {
+  position: relative;
   color: #2e2f42;
   font-weight: 500;
   line-height: 1.5;
@@ -128,6 +129,17 @@ img {
   display: block;
 }
 
+.link-nav.active::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  display: block;
+  border-radius: 2px;
+    width: 48px;
+    height: 4px;
+    background-color: #404bbf;
+    
+}
 .link-nav:hover,
 .link-nav:focus {
   color: #404bbf;
@@ -173,6 +185,8 @@ img {
   display: block;
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 
@@ -276,11 +290,10 @@ img {
 }
 .list-card {
   display: flex;
-  gap: 24px;
-  align-items: center;
-  justify-content: center;
+ gap: 24px;
 }
 .item-card {
+
   background-color: #ffffff;
   width: calc((100% - 3 * 24px) / 4);
   border-radius: 0 0 4px 4px;
@@ -294,6 +307,7 @@ img {
 
 .card-text {
   text-align: center;
+  margin-top: 8px;
 }
 .card {
   background-color: #f4f4fd;
@@ -307,10 +321,37 @@ img {
 .card-icon {
   width: 16px;
   height: 16px;
+  fill: #ffffff;
+}
+
+.icon-card {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 
 }
 
+.icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #4D5AE5
 
+}
+
+.icon-circle:hover
+.icon-circle:focus{
+
+background-color: #404BBF;
+}
+.icon-item {
+  margin-top: 8px;
+}
+ 
 .title-name {
   text-align: center;
   margin-bottom: 8px;
@@ -377,5 +418,11 @@ img {
 width: 24px;
 height: 24px;
 fill: #ffffff;
+}
+
+.footer-icon {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
 }
 /* #endregion */
