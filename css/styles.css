@@ -129,16 +129,15 @@ img {
   display: block;
 }
 
-.link-nav.active::after{
-  content: '';
+.link-nav.active::after {
+  content: "";
   position: absolute;
   bottom: 0;
   display: block;
   border-radius: 2px;
-    width: 48px;
-    height: 4px;
-    background-color: #404bbf;
-    
+  width: 48px;
+  height: 4px;
+  background-color: #404bbf;
 }
 .link-nav:hover,
 .link-nav:focus {
@@ -179,7 +178,11 @@ img {
 
 .hero {
   background-color: #2e2f42;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/people-office.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
@@ -188,7 +191,6 @@ img {
   max-width: 1440px;
   margin: 0 auto;
 }
-
 
 .title-hero {
   color: #ffffff;
@@ -290,10 +292,9 @@ img {
 }
 .list-card {
   display: flex;
- gap: 24px;
+  gap: 24px;
 }
 .item-card {
-
   background-color: #ffffff;
   width: calc((100% - 3 * 24px) / 4);
   border-radius: 0 0 4px 4px;
@@ -326,10 +327,9 @@ img {
 
 .icon-card {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
 
 .icon-circle {
@@ -337,21 +337,18 @@ img {
   align-items: center;
   justify-content: center;
   width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background-color: #4D5AE5
-
+  height: 40px;
+  border-radius: 100%;
+  background-color: #4d5ae5;
 }
 
-.icon-circle:hover
-.icon-circle:focus{
-
-background-color: #404BBF;
+.icon-circle:hover .icon-circle:focus {
+  background-color: #404bbf;
 }
 .icon-item {
   margin-top: 8px;
 }
- 
+
 .title-name {
   text-align: center;
   margin-bottom: 8px;
@@ -374,6 +371,13 @@ background-color: #404BBF;
 
 .item-portfolio {
   width: calc((100% - 24px * 2) / 3);
+  cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item-portfolio:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-content {
@@ -389,6 +393,29 @@ background-color: #404BBF;
   text-align: start;
 }
 
+.portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  transform: translateY(100%);
+  padding: 30px;
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  background: #4d5ae5;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item-portfolio:hover .overlay {
+  transform: translateY(0);
+}
 /* #endregion */
 
 /* #region Footer */
@@ -414,10 +441,10 @@ background-color: #404BBF;
   margin-bottom: 16px;
   display: inline-block;
 }
-.footer-icon { 
-width: 24px;
-height: 24px;
-fill: #ffffff;
+.footer-icon {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
 }
 
 .footer-icon {
