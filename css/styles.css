@@ -246,6 +246,8 @@ img {
 .feature-icon {
   width: 64px;
   height: 64px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .list-feature {
   width: 1128px;
@@ -283,6 +285,17 @@ img {
   text-align: start;
 }
 
+.icon-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+}
 /* #endregion */
 
 /* #region Card */
