@@ -167,10 +167,14 @@ img {
 
 .hero {
   background-color: #2e2f42;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: block;
   padding-top: 188px;
   padding-bottom: 188px;
 }
+
 
 .title-hero {
   color: #ffffff;
@@ -301,8 +305,9 @@ img {
 }
 
 .card-icon {
-  width: 40px;
-  height: 40px;
+  width: 16px;
+  height: 16px;
+
 }
 
 
@@ -369,7 +374,8 @@ img {
   display: inline-block;
 }
 .footer-icon { 
-width: 40px;
-height: 40px;
+width: 24px;
+height: 24px;
+fill: #ffffff;
 }
 /* #endregion */
