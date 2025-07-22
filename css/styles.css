@@ -30,9 +30,7 @@ button {
   cursor: pointer;
 }
 
-* 
-::after
-::before {
+* ::after ::before {
   box-sizing: border-box;
 }
 
@@ -65,7 +63,8 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -73,7 +72,6 @@ img {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  
 }
 
 .list-nav {
@@ -135,7 +133,7 @@ img {
 }
 
 .link-nav.active {
-  color: #404bbf;;
+  color: #404bbf;
 }
 .link-nav.active::after {
   content: "";
@@ -146,7 +144,6 @@ img {
   width: 48px;
   height: 4px;
   background-color: #404bbf;
-
 }
 .link-nav:hover,
 .link-nav:focus {
@@ -163,6 +160,7 @@ img {
   line-height: 1.5;
   font-style: normal;
   letter-spacing: 0.02em;
+  margin-right: 40px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -175,13 +173,6 @@ img {
   color: #404bbf;
 }
 
-.email {
-  margin-right: 40px;
-}
-
-.tel {
-  margin-right: 0;
-}
 /* #endregion */
 
 /* #region Hero */
@@ -302,11 +293,11 @@ img {
   justify-content: center;
   align-items: center;
   border: 1px solid #8e8f99;
-    border-radius: 4px;
-    width: 264px;
-    height: 112px;
-    background-color: #f4f4fd;
-    margin-bottom: 8px;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  margin-bottom: 8px;
 }
 /* #endregion */
 
@@ -369,9 +360,12 @@ img {
 }
 
 .icon-circle:hover {
-  background-color: #404bbf;;
+  background-color: #404bbf;
 }
 
+.icon-circle:focus {
+  background-color: #404bbf;
+}
 .icon-item {
   margin-top: 8px;
 }
@@ -457,7 +451,7 @@ img {
 }
 
 .footer-logo-text {
-  margin-right: 120px
+  margin-right: 120px;
 }
 .text-footer {
   color: #f4f4fd;
@@ -487,7 +481,7 @@ img {
 }
 .icon-item {
   width: 40px;
-    height: 40px;
+  height: 40px;
 }
 
 .icon-circle-footer {
@@ -499,20 +493,17 @@ img {
   border-radius: 50%;
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 
-.icon-circle-footer:hover
-{
-  background-color: #31D0AA;
+.icon-circle-footer:hover {
+  background-color: #31d0aa;
 }
 
 .icon-circle-footer:focus {
-  background-color: #31D0AA;
+  background-color: #31d0aa;
 }
 .social-media {
   max-width: 280px;
-
 }
 .footer-icon {
   min-width: 24px;
@@ -521,13 +512,12 @@ img {
 }
 
 .text-social {
-
   font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #ffffff;
-    margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
 
 /* #endregion */
