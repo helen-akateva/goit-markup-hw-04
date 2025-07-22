@@ -134,15 +134,19 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.link-nav.active {
+  color: #404bbf;;
+}
 .link-nav.active::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   display: block;
   border-radius: 2px;
   width: 48px;
   height: 4px;
   background-color: #404bbf;
+
 }
 .link-nav:hover,
 .link-nav:focus {
@@ -171,11 +175,11 @@ img {
   color: #404bbf;
 }
 
-.item-address-email {
+.email {
   margin-right: 40px;
 }
 
-.item-address-tel {
+.tel {
   margin-right: 0;
 }
 /* #endregion */
@@ -191,6 +195,7 @@ img {
     url("../images/people-office.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: block;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -251,8 +256,8 @@ img {
 }
 
 .feature-icon {
-  width: 64px;
-  height: 64px;
+  min-width: 64px;
+  min-height: 64px;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -340,9 +345,9 @@ img {
 }
 
 .card-icon {
-  width: 16px;
-  height: 16px;
-  fill: #ffffff;
+  min-width: 16px;
+  min-height: 16px;
+  fill: #f4f4fd;
 }
 
 .icon-card {
@@ -358,13 +363,13 @@ img {
   justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-circle:hover {
-  background-color: #404BBF;
+  background-color: #404bbf;;
 }
 
 .icon-item {
@@ -424,7 +429,7 @@ img {
   position: absolute;
   inset: 0;
   transform: translateY(100%);
-  padding: 30px;
+  padding: 40px 32px;
   display: flex;
   font-weight: 400;
   font-size: 16px;
@@ -447,7 +452,12 @@ img {
 }
 
 .footer-container {
-  display: block;
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-logo-text {
+  margin-right: 120px
 }
 .text-footer {
   color: #f4f4fd;
@@ -473,35 +483,41 @@ img {
 }
 .icon-footer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
+  gap: 16px;
+}
+.icon-item {
+  width: 40px;
+    height: 40px;
 }
 
 .icon-circle-footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 
-.icon-circle-footer:hover {
+.icon-circle-footer:hover
+{
   background-color: #31D0AA;
 }
 
+.icon-circle-footer:focus {
+  background-color: #31D0AA;
+}
 .social-media {
   max-width: 280px;
 
 }
 .footer-icon {
-  width: 24px;
-  height: 24px;
-  fill: #ffffff;
+  min-width: 24px;
+  min-height: 24px;
+  fill: #f4f4fd;
 }
 
 .text-social {
@@ -511,7 +527,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #ffffff;
-    max-width: 96px;
+    margin-bottom: 16px;
 }
 
 /* #endregion */
