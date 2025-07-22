@@ -464,6 +464,13 @@ img {
   display: inline-block;
 }
 
+.social-media {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+}
 .icon-footer {
   display: flex;
   justify-content: center;
@@ -487,6 +494,10 @@ img {
   background-color: #31D0AA;
 }
 
+.social-media {
+  max-width: 280px;
+
+}
 .footer-icon {
   width: 24px;
   height: 24px;
